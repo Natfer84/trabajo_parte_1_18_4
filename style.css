@@ -1,1 +1,59 @@
-/* Borrar las br */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+img{
+    height: 200px;
+}
+h1{
+    margin: 50px 0 50px 25%;
+    color: #0088d0;
+    font-size: 3.5em;
+    text-align: center;
+}
+.divPrincipal{
+    width: 50%;
+    border-radius: 15px;
+}
+h2{
+    text-align: center;
+    font-size: 1.2em;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario input{
+    margin: 15px 0;
+}
+.boton{
+    margin-top: 50px!important;
+    width: 300px;
+    background: white;
+    color: #0088d0;
+    border: 1px solid #0088d0;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.boton:hover{
+    background: #e9bd3a;
+}
+h3{
+    margin: 70px 0;
+    font-size: 2em;
+    text-align: center;
+}
+#task-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#task-container div{
+    width: 300px;
+    margin: 20px;
+}

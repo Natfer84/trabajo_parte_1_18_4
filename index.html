@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +7,40 @@
     <title>CRUD Firebase</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css"
         integrity="sha384-L7+YG8QLqGvxQGffJ6utDKFwmGwtLcCjtwvonVZR/Ba2VzhpMwBz51GaXnUsuYbj" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="card text-white bg-info mb-6  offset-md-4" style="max-width: 20rem;">
-        <div class="card-header">Formulario Tareas</div>
-        <div class="card-body">
-            <form id="task-form">
-                <input type="text" id="task-title" class="form-control" placeholder="Título de la tarea" autofocus>
-                <textarea id="task-description" class="form-control" placeholder="Descripción de la tarea" cols="10" rows="5"></textarea>
-                <br>
-
-                <input type="submit" value="Enviar Tarea" class="btn btn-lg btn-primary" id="task-button">
+    <header>
+        <img src="logo.png" alt="">
+        <h1>Tu aplicacion To Do</h1>
+    </header>
+    <main>
+        <div class="card text-white bg-info mb-6  offset-md-3 divPrincipal display">
+            <div class="card-header"><h2>Formulario Tareas</h2></div>
+            <div class="card-body">
+                <form id="task-form" class="formulario">
+                    <input type="text" id="task-title" class="form-control" placeholder="Título de la tarea" autofocus>
+                    <textarea id="task-description" class="form-control" placeholder="Descripción de la tarea" cols="10" rows="5"></textarea>
+                    <input type="submit" value="Enviar Tarea" class="btn btn-lg btn-primary boton" id="task-button">
+                </form>
+            </div>
+        </div>
+        <h3>Listado de tareas existentes</h3>
+        <!-- Formulario de edición (oculto inicialmente) -->
+        <div id="edit-form" style="display:none;">
+            <h4>Editar Tarea</h4>
+            <form id="edit-task-form">
+                <input type="text" id="edit-task-title" class="form-control" placeholder="Título de la tarea">
+                <textarea id="edit-task-description" class="form-control" placeholder="Descripción de la tarea" cols="10" rows="5"></textarea>
+                <input type="submit" value="Actualizar Tarea" class="btn btn-lg btn-success">
+                <button type="button" id="cancel-edit" class="btn btn-lg btn-danger">Cancelar</button>
             </form>
         </div>
-    </div>
-    <br>
-    <h3>Listado de tareas existentes</h3>
+        <div id="task-container"></div>
+    </main>
+    <footer>
 
-    <!-- Formulario de edición (oculto inicialmente) -->
-    <div id="edit-form" style="display:none;">
-        <h4>Editar Tarea</h4>
-        <form id="edit-task-form">
-            <input type="text" id="edit-task-title" class="form-control" placeholder="Título de la tarea">
-            <textarea id="edit-task-description" class="form-control" placeholder="Descripción de la tarea" cols="10" rows="5"></textarea>
-            <input type="submit" value="Actualizar Tarea" class="btn btn-lg btn-success">
-            <button type="button" id="cancel-edit" class="btn btn-lg btn-danger">Cancelar</button>
-        </form>
-    </div>
-
-    <div id="task-container"></div>
-
+    </footer>
     <script src="utils.js" type="module" defer></script>
     <script src="index.js" type="module" defer></script>
 </body>
