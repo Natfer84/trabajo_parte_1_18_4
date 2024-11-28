@@ -9,10 +9,7 @@ img {
     margin-bottom: 20px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1{
     font-family: "Crimson Text", serif;
 }
 
@@ -22,9 +19,10 @@ h1 {
     font-size: 3.5em;
     margin-bottom: 50px;
 
+    text-align: center;
 }
 
-.divPrincipal {
+.card  {
     width: 50%;
     border-radius: 15px;
     margin: 0px auto;
@@ -65,7 +63,7 @@ h3 {
     text-align: center;
 }
 
-#task-container {
+.card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -87,6 +85,6 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-#boton_borrar{
+.delete{
     margin-right: 15px;
 }

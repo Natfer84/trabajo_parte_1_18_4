@@ -8,17 +8,27 @@
     <title>CRUD Firebase</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css"
         integrity="sha384-L7+YG8QLqGvxQGffJ6utDKFwmGwtLcCjtwvonVZR/Ba2VzhpMwBz51GaXnUsuYbj" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    
+    <div id="con_logo">
+        <img src="logo.png" alt="logo">
+
+    </div>
+<h1>Bienvenido a tareas TO DO</h1>
+
+
     <!-- Formulario para agregar tarea -->
-    <div class="card text-white bg-info mb-6  offset-md-4" style="max-width: 20rem;">
+    <div class="card text-white bg-info mb-6  offset-md-5" style="max-width: 20rem;" class="divPrincipal">
         <div class="card-header">Formulario Tareas</div>
         <div class="card-body">
             <form id="task-form">
                 <input type="text" id="task-title" class="form-control" placeholder="Título de la tarea" autofocus>
-                <textarea id="task-description" class="form-control" placeholder="Descripción de la tarea" cols="10" rows="5"></textarea>
+                <textarea id="task-description" class="form-control" placeholder="Descripción de la tarea" cols="10"
+                    rows="5"></textarea>
                 <br>
                 <input type="submit" value="Enviar Tarea" class="btn btn-lg btn-primary" id="task-button">
             </form>
@@ -33,13 +43,14 @@
         <div class="card-body">
             <form id="formActualizarTarea">
                 <input type="text" id="task-titles" class="form-control" placeholder="Título de la tarea" autofocus>
-                <textarea id="task-descriptions" class="form-control" placeholder="Descripción de la tarea" cols="10" rows="5"></textarea>
+                <textarea id="task-descriptions" class="form-control" placeholder="Descripción de la tarea" cols="10"
+                    rows="5"></textarea>
                 <br>
                 <input type="submit" value="Actualizar Tarea" class="btn btn-lg btn-primary" id="task-buttons">
             </form>
         </div>
     </div>
-    
+
     <!-- Importar los scripts -->
     <script src="utils.js" type="module" defer></script>
     <script src="index.js" type="module" defer></script>
