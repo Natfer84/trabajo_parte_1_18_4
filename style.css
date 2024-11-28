@@ -1,42 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    display: flex;
-    align-items: center;
-}
-img{
+
+img {
     height: 200px;
+    margin-bottom: 20px;
 }
-h1, h2, h3, h4{
+
+h1,
+h2,
+h3,
+h4 {
     font-family: "Crimson Text", serif;
 }
-h1{
-    margin: 50px 0 50px 25%;
+
+h1 {
+
     color: #0088d0;
     font-size: 3.5em;
-    text-align: center;
+    margin-bottom: 20px;
+
 }
-.divPrincipal{
+
+.divPrincipal {
     width: 50%;
     border-radius: 15px;
+    margin: 0px auto;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 1.2em;
 }
-.formulario{
+
+.formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.formulario input{
+
+.formulario input {
     margin: 15px 0;
 }
-.boton{
-    margin-top: 50px!important;
+
+.boton {
+    margin-top: 50px !important;
     width: 300px;
     background: white;
     color: #0088d0;
@@ -44,19 +54,39 @@ h2{
     border-radius: 10px;
     font-weight: bolder;
 }
-.boton:hover{
+
+.boton:hover {
     background: #e9bd3a;
 }
-h3{
+
+h3 {
     margin: 70px 0;
     font-size: 2em;
     text-align: center;
 }
-#task-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+#task-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-#task-container div{
-    width: 300px;
+
+#task-container div {
     margin: 20px;
+}
+
+#task-button {
+    max-width: 100%;
+}
+
+#cont_imag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#boton_borrar{
+    margin-right: 15px;
 }

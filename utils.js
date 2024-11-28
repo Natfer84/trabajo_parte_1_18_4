@@ -55,6 +55,7 @@ function createCard(id, task) {
     const inputDelete = document.createElement("input");
     inputDelete.type = "button";
     inputDelete.value = "Borrar Tarea";
+    inputDelete.style.marginRight = "15px";
     inputDelete.setAttribute("name", "delete");
     inputDelete.setAttribute("id", id);
     bodyDiv.appendChild(inputDelete);

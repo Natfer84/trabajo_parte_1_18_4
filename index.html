@@ -15,7 +15,9 @@
 <body>
     <header>
         <img src="logo.png" alt="">
+         <div id="cont_imag">
         <h1>Tu aplicacion To Do</h1>
+        </div>
     </header>
     <main>
         <div class="card text-white bg-info mb-6  offset-md-3 divPrincipal display">
@@ -33,7 +35,7 @@
         <div id="edit-form" style="display:none;">
             <h4>Editar Tarea</h4>
             <form id="edit-task-form">
-                <input type="text" id="edit-task-title" class="form-control" placeholder="Título de la tarea">
+                <input type="text" id="edit-task-title" class="form-control" placeholder="Título de la tarea" id="boton_borrar">
                 <textarea id="edit-task-description" class="form-control" placeholder="Descripción de la tarea" cols="10" rows="5"></textarea>
                 <input type="submit" value="Actualizar Tarea" class="btn btn-lg btn-success">
                 <button type="button" id="cancel-edit" class="btn btn-lg btn-danger">Cancelar</button>
