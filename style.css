@@ -39,14 +39,16 @@ h2 {
     align-items: center;
 }
 .card-header{
-    padding: 20px 20px 10px 20px;
+    padding: 10px 20px 5px 10px;
+    margin-bottom: 25px;
     font-size: 20px;
     border-bottom: none;
-    background-color: rgba(0, 0, 0, 0);
-}
-.card-header p{
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-color: #0088d0;
     text-align: center;
+    color: aliceblue;
 }
+
 #task-button, #task-buttons{
     border-radius: 4px;
     
