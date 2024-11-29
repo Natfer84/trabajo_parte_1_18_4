@@ -1,5 +1,10 @@
    // Importamos las funciones necesarias desde utils.js
    import { getTasks, insertTask, deleteTask, mostrarFormularioEditar, updateTask } from './utils.js';
+//getTasks: Obtiene todas las tareas de la base de datos y las muestra.
+//insertTask: Inserta una nueva tarea en Firestore.
+//deleteTask: Elimina una tarea de Firestore.
+//mostrarFormularioEditar: Muestra el formulario para editar una tarea.
+//updateTask: Actualiza una tarea en Firestore.
 
    // Cargar todas las tareas cuando la página se cargue
    await getTasks();
