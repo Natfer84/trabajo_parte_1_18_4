@@ -18,12 +18,11 @@ h1 {
     color: #0088d0;
     font-size: 3.5em;
     margin-bottom: 50px;
-
     text-align: center;
 }
 
 .card  {
-    width: 50%;
+
     border-radius: 15px;
     margin: 0px auto;
 }
@@ -33,11 +32,38 @@ h2 {
     font-size: 1.2em;
 }
 
+
 .formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.card-header{
+    padding: 20px 20px 10px 20px;
+    font-size: 20px;
+    border-bottom: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+.card-header p{
+    text-align: center;
+}
+#task-button, #task-buttons{
+    border-radius: 4px;
+    
+}
+
+.deletess:hover, .updates:hover{
+    background-color: #0088d0;
+    font-weight: bold;
+}
+
+.deletess, .updates {
+    margin: 10px 10px 20px 10px;  
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+
 
 .formulario input {
     margin: 15px 0;

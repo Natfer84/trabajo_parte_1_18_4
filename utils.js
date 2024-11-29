@@ -55,6 +55,7 @@ function createCard(id, data) {
     deleteButton.type = "button";
     deleteButton.value = "Borrar Tarea";
     deleteButton.setAttribute("name", "delete");
+    deleteButton.classList.add("deletess");
     deleteButton.setAttribute("id", id);
     bodyDiv.appendChild(deleteButton);
 
@@ -63,6 +64,7 @@ function createCard(id, data) {
     updateButton.type = "button";
     updateButton.value = "Actualizar Tarea";
     updateButton.setAttribute("name", "update");
+    updateButton.classList.add("updates");
     updateButton.setAttribute("id", id);
     bodyDiv.appendChild(updateButton);
 
