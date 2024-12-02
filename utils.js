@@ -27,7 +27,7 @@ export async function getTasks() {
 function createCard(id, data) {
     const principalDiv = document.createElement('div');
     principalDiv.setAttribute("class", "card bg-light mb-3");
-    principalDiv.style = "max-width: 20rem;";
+    principalDiv.style = "max-width: 25rem;";
     principalDiv.setAttribute("name", id);
 
     const headerDiv = document.createElement('div');
@@ -38,10 +38,10 @@ function createCard(id, data) {
 
     const bodyDiv = document.createElement('div');
     const pTitle = document.createElement("p");
-    const pTitleText = document.createTextNode("Titulo: " + data.title);
+    const pTitleText = document.createTextNode("Tarea: " + data.title);
     const hr = document.createElement('hr');
     const pDesc = document.createElement("p");
-    const pDescText = document.createTextNode("Description: " + data.description);
+    const pDescText = document.createTextNode("Descripción: " + data.description);
 
     pTitle.appendChild(pTitleText);
     bodyDiv.appendChild(pTitle);
@@ -104,13 +104,13 @@ function generateRandomIdTask(num) {
 // Función para insertar una nueva tarea en Firestore
 export async function insertTask(trabajo) {
     await setDoc(doc(db, "trabajo", generateRandomIdTask(20)), trabajo);
-    alert("Insertada la tarea: " + trabajo.title);
+    alert("La tarea " + trabajo.title + "ha sido guardada.");
 }
 
 // Función para eliminar una tarea de Firestore
 export async function deleteTask(id) {
     await deleteDoc(doc(db, "trabajo", id));
-    alert("Borrada la tarea: " + id);
+    alert("Se ha borrado la tarea: " + id);
 }
 
 // Función para actualizar una tarea en Firestore

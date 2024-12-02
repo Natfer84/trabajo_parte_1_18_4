@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 img {
     height: 200px;
     margin-bottom: 20px;
@@ -13,7 +14,7 @@ h1{
     font-family: "Crimson Text", serif;
 }
 
-h1 {
+h1, h3 {
 
     color: #0088d0;
     font-size: 3.5em;
@@ -25,6 +26,8 @@ h1 {
 
     border-radius: 15px;
     margin: 0px auto;
+    border-color:#0088d0;
+
 }
 
 h2 {
@@ -38,15 +41,28 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
-.card-header{
-    padding: 10px 20px 5px 10px;
-    margin-bottom: 25px;
+.card-header, .actualizar_task{
+    padding: 5px 10px;
+    margin: 20px;
     font-size: 20px;
     border-bottom: none;
     /* background-color: rgba(0, 0, 0, 0); */
     background-color: #0088d0;
     text-align: center;
     color: aliceblue;
+    border-radius: 10px;
+}
+
+.actualiza{
+    padding: 10px 10px;
+    margin: 20px;
+    font-size: 20px;
+    border-bottom: none;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-color: #0088d0;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 10px;
 }
 
 #task-button, #task-buttons{
@@ -55,7 +71,8 @@ h2 {
 }
 
 .deletess:hover, .updates:hover{
-    background-color: #0088d0;
+    /* background-color: #0088d0; */
+    background-color: #593196;
     font-weight: bold;
 }
 
@@ -91,7 +108,7 @@ h3 {
     text-align: center;
 }
 
-.card {
+.card{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
